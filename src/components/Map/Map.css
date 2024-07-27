@@ -1,0 +1,16 @@
+.Map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+.leaflet-container {
+    height: 66vh;
+}
+
+.popup {
+    font-weight: 800;
+    font-size: 0.8em;
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+.card {
+    position: absolute;
+    background-color: #fff;
+    align-self: center;
+    width: 75%;
+    display: flex;
+    margin-top: 12%;
+    z-index: 1;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.card div {
+    border-right: 1px solid rgb(150, 150, 150);
+    width: 100%;
+    padding-left: 3%;
+    position: relative;
+}
+
+.card div:last-child {
+    border: none;
+}
+
+.card div h3 {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    align-self: top;
+    font-family: Poppins, sans-serif;
+    color: grey;
+    position: absolute;
+    top: -10px;
+    letter-spacing: 2px;
+}
+
+.card div p {
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
+    padding-top: 7%;
+    padding-left: 1%;
+    word-break: break-word;
+}
+ 
+.card div:first-child p{
+    word-break: break-word;
+}
+
+@media (max-width: 890px) {
+    .card {
+        margin-top: 30%;
+        display: block;
+        padding: 0;
+        height: auto;
+        padding-top: 3%;
+    }
+
+    .card div {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card div p {
+        padding-top: 0.6em;
+        padding-bottom: 1em;
+    }
+
+    .card div h3 {
+        top: 0;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .card {
+        margin-top: 45%;
+    }
+
+}

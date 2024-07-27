@@ -1,0 +1,108 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    background: url("src/assets/images/pattern-bg-desktop.png") no-repeat;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header h2 {
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    position: relative;
+}
+
+.input-container input {
+    width: 550px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    position: absolute;
+    right: 0;
+    width: 12%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #000;
+    background-image: url("src/assets/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    transition: ease-in-out 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+}
+
+.loading-button {
+    position: absolute;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 3;
+    background-color: #000000;
+}
+
+.loading-button::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: loading-action 1s linear infinite;
+}
+
+@keyframes loading-action {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 500px) {
+    .header h2 {
+        font-size: 25px;
+    }
+    
+    .input-container input {
+        width: 320px;
+        font-size: 12px;
+    }
+
+}
