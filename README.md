@@ -11,9 +11,10 @@
 The application consists in a page with an input for the user to type an Ip address and then it will render on the screen a card with the informations of location, timezone and isp, with a background of the exact location of that Ip provided by the user.
 
 ## How to use 
-At first you need to have NPM and Node.js installed in your system
+At first you need to have NPM and Node.js installed in your system and an account on the IP Geolocation website (https://geo.ipify.org/statistics)
 - Clone the repository `git clone`
 - Install all dependencies `npm i` or `npm install`
+- Put your link provided by the website of IP Geolocation on the Fetch Component
 - Open the project and put into the terminal `npm run dev`
 - Click on the link provided by the localhost
 
